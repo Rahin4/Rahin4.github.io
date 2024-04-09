@@ -452,6 +452,7 @@ header .sidemenu .playlist:hover{
     display: flex;
     scroll-behavior: smooth;
     top: -60vh;
+    /* border: 1px solid white; */
 
 
 }
@@ -482,7 +483,7 @@ header .sidemenu .playlist:hover{
 
 .popularsongs h1{
     color: red;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
     margin-bottom: 10px;
@@ -495,12 +496,25 @@ header .sidemenu .playlist:hover{
  font-family: "JetBrains Mono", monospace; 
  height: 100px;
  margin-right: 15px;
- margin-top: 30px;
-
- 
-
-
+ margin-top: -1px;
+ background-color: #000b6d;
+ color: rgb(0, 255, 64);
+ padding: 15px;
 }
+
+.popularsongs .popsonsec:hover{
+    background-color: #0013c0;
+    color: yellow;
+}
+.popularsongs .popsonsec:active{
+    background-color: wheat;
+    color: black;
+}
+
+.popsonsec span{
+    color: red;
+}
+
 .imgson{
     height: 100px;
     width: 100px;
@@ -511,8 +525,9 @@ header .sidemenu .playlist:hover{
 
 .popsonsec .info-on-img{
     position: relative;
-    bottom: 70px;
+    bottom: 10px;
     left: 10px;
+    font-size: 13px;
 
 }
 
@@ -729,7 +744,7 @@ header .sidemenu .playlist:hover{
 }
 .trending{
     position: relative;
-    top: -35vh;
+    top: -38vh;
     font-family: "Press Start 2P", system-ui;
     color: #0c6b28;
     padding: 10px;
@@ -1052,6 +1067,14 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
         width: 100vw;
         height: 100vh;
     }
+
+    .popularsongs .popsonsec{
+        background-color: transparent;
+    }
+    .popularsongs .popsonsec:hover{
+        background-color: transparent;
+    }
+
 
     .songslielem{
         display: none;
@@ -1540,7 +1563,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    .habibsong{
     font-size: 15px;
     /* border: 1px solid white; */
-    height: 25vh;
+    height: 29vh;
     background-color: #000000;
     border-radius: 20px;
     box-shadow: 1px 1px 4px blue;
@@ -1567,7 +1590,8 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    }
    .songdetails{
     /* border: 1px solid white; */
-    font-size: 9px;
+    font-size: 7px;
+    margin-top: 2vh;
    }
    .musicelements{
     /* border: 1px solid white; */
@@ -1580,9 +1604,9 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    .songsonebyone11{
     /* border: 1px solid white; */
     width: 70vw;
-    background-color: #000000;
+    background-color: #0c004e;
     justify-content: space-between;
-    box-shadow: 1px 1px 4px blue;
+    box-shadow: 1px 1px 4px rgb(0, 0, 122);
     margin-top: -2vh;
    }
    .songdetail-inone11{
@@ -1597,7 +1621,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
     height: 60vh;
    }
    .indexinallsong11{
-    font-size: 3vh;
+    font-size: 2vh;
     color: red;
    }
    .songdetail-inone11 .images{
@@ -1612,39 +1636,40 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
 
    .allplaylistname{
     font-size: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    box-shadow: 1px 1px 4px rgb(0, 41, 129);
+    background-color: #000000;
+    color: #00ff40;
+    /* box-shadow: 1px 1px 4px rgb(0, 41, 129); */
    }
    .topcontainer{
     /* border: 1px solid white; */
-    font-size: 8px;
+    font-size: 7px;
     width: 30vw;
-    background-color: #b100a2;
-    height: 7vh;
-    color: #ffffff;
+    background-color: #130058;
+    height: 5vh;
+    color: #00b818;
     font-weight: 400;
    }
    .playsongname{
-    font-size: 18px;
+    font-size: 12px;
    }
 
    .songsclass{
     /* border: 1px solid white; */
-    height: 10vh;
+    height: 6vh;
+    width: 60vw;
+    background-color: #000546;
    }
    .songsclass .playbandname{
     font-size: 13px;
     color: red;
    }
    .pinabout{
-    font-size: 20px;
+    font-size: 14px;
    }
-   
+  .popularsongs .popsonsec{
+    margin-top: 10px;
+   }
 
 
 
 }
-
-
-
