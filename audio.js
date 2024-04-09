@@ -57,6 +57,14 @@ const audiobundle = [
     img: "img\\theshow.jpeg",
     Id: 7,
   },
+  {
+    songname: "learning to fly",
+    band: "pink floyed",
+    src: "musics/Pink Floyd - Learning To Fly (Official Music Video HD).m4a",
+    state: false,
+    img: "img\\theshow.jpeg",
+    Id: 8,
+  },
   
 ];
 
@@ -109,8 +117,7 @@ const sidesongs = (songcollection.innerHTML = audiobundle.map(function (
 
 let trendingarray=[];
 
-trendingarray.push(...audiobundle.slice(-30));
-console.log(trendingarray)
+trendingarray.push(...audiobundle.slice(-20));
 
 
 

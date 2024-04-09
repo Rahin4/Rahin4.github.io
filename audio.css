@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 /*  font-family: "Kelly Slab", sans-serif; */
+      @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
 
 *{
@@ -1066,7 +1067,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
         border-radius: 1%;
         /* border: 1px solid white; */
         /* margin-top: -13vh; */
-        border-radius: 0px 0px 40px 10px;
+        /* border-radius: 0px 0px 40px 10px; */
     }
     header .sidemenu{
     display: none;
@@ -1087,12 +1088,12 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
     }
 
     header .masterplay{
-        height: 11%;
+        height: 10%;
         width: 90%;
         position: fixed;
-        left: 5%;
-        bottom: 10%;
-        border-radius: 0px 0px 40px 10px;
+        left: 5vw;
+        bottom: 10vh;
+        border-radius: 0px 0px 15px 10px;
         margin-top: 75.2vh;
         background-image: linear-gradient(to right,rgb(0, 2, 121),rgb(0, 110, 96));
         z-index: 1;
@@ -1524,6 +1525,124 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
     
 
     
+
+}
+
+@media(max-width:375px){
+   .header{
+    height: 90vh;
+   }
+   .navelements ul li {
+    /* border: 1px solid white; */
+    font-size: 2.9vw;
+    color: #00ad82;
+   }
+   .habibsong{
+    font-size: 15px;
+    /* border: 1px solid white; */
+    height: 25vh;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px blue;
+   }
+   .trending{
+    /* border: 1px solid white; */
+    margin-top: -12vh;
+    background-color: #00204b;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+   }
+  .playingarea .popularsongs{
+    /* border: 1px solid white; */
+    background-color: #00495f;
+    margin-top: 25vh;
+    border-radius: 10px;
+    box-shadow: 1px qpx 5px blue;
+   }
+   .info-on-img{
+    /* border: 1px solid white; */
+    margin-top: -1.7vh;
+   }
+   .songdetails{
+    /* border: 1px solid white; */
+    font-size: 9px;
+   }
+   .musicelements{
+    /* border: 1px solid white; */
+    font-size: 28px;
+   }
+   .masterplay{
+    border: 2px solid rgb(0, 0, 0);
+    width: 30vw;
+   }
+   .songsonebyone11{
+    /* border: 1px solid white; */
+    width: 70vw;
+    background-color: #000000;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px blue;
+    margin-top: -2vh;
+   }
+   .songdetail-inone11{
+    font-size: 10px;
+   }
+   .songdetail-inone11 .songname{
+    font-size: 13px;
+   }
+
+   .songslielem{
+    /* border: 1px solid white; */
+    height: 60vh;
+   }
+   .indexinallsong11{
+    font-size: 3vh;
+    color: red;
+   }
+   .songdetail-inone11 .images{
+    margin-left: 40px;
+   }
+   .songsonebyone11:hover{
+    color: black;
+   }
+   .songsonebyone11:active{
+    color: black;
+   }
+
+   .allplaylistname{
+    font-size: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 1px 1px 4px rgb(0, 41, 129);
+   }
+   .topcontainer{
+    /* border: 1px solid white; */
+    font-size: 8px;
+    width: 30vw;
+    background-color: #b100a2;
+    height: 7vh;
+    color: #ffffff;
+    font-weight: 400;
+   }
+   .playsongname{
+    font-size: 18px;
+   }
+
+   .songsclass{
+    /* border: 1px solid white; */
+    height: 10vh;
+   }
+   .songsclass .playbandname{
+    font-size: 13px;
+    color: red;
+   }
+   .pinabout{
+    font-size: 20px;
+   }
+   
+
+
 
 }
 
