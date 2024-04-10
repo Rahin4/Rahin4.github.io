@@ -448,8 +448,8 @@ btnplay.addEventListener("click", function () {
   Musicx.src = audiobundle[5].src;
   btnplay.innerHTML = "play";
   songdetails.innerHTML = `<div class="songdetails">
- <h2>${audiobundle[7].songname}</h2>
- <span>${audiobundle[7].band}</span> </div>`;
+ <h2>${audiobundle[5].songname}</h2>
+ <span>${audiobundle[5].band}</span> </div>`;
 
   playpause();
 });
