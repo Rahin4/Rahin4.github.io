@@ -280,6 +280,7 @@ header .sidemenu .playlist:hover{
 }
 
 .masterplay .playingtime{
+    
     width: 50%;
     /* border: 1px solid white; */
     display: inline-block;
@@ -300,7 +301,23 @@ header .sidemenu .playlist:hover{
 
 .rangetime{
     width: 100%;
+    -webkit-appearance: none;
+    background: #0383b6;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
 }
+.rangetime::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    background: #00c472;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.rangetime:hover::-webkit-slider-thumb {
+    background: #b22ecc; /* Light green thumb */
+  }
 
 .songdetails{
     color: rgb(244, 255, 85);
@@ -1080,7 +1097,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
         display: none;
     }
     header{
-        height: 80vh;
+        height: 85vh;
         width: 90vw;
         display: flex;
         flex-wrap: wrap;
@@ -1096,7 +1113,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
     display: none;
     }
     header .playingarea{
-        height: 60vh;
+        height: 67vh;
         width: 90%;
         background-color: rgb(1, 7, 80);
         margin-left: -0.1vw;
@@ -1106,20 +1123,21 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
         
         
         /* border: 1px solid white; */
-        margin-top: 10vh;
+        margin-top: 6vh;
         /* border: 1px solid white; */
     }
 
     header .masterplay{
-        height: 10%;
+        /* height: 11%; */
         width: 90%;
         position: fixed;
         left: 5vw;
-        bottom: 10vh;
+        bottom: 7.8vh;
         border-radius: 0px 0px 15px 10px;
-        margin-top: 75.2vh;
+        /* margin-top: 72.2vh; */
         background-image: linear-gradient(to right,rgb(0, 2, 121),rgb(0, 110, 96));
         z-index: 1;
+        border: 2px solid black;
     }
     .masterplay .playingtime{
         width: 90%; 
@@ -1155,7 +1173,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
     .playingarea .popularsongs{
         height: 20%;
         position: relative;
-        top: -99%;
+        top: -92%;
         left: 0%;
         padding: 10px;
         /* border: 1px solid red;   */
@@ -1451,7 +1469,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
             height: 65.5vh;
             /* border: 1px solid white; */
             width: 85vw;
-            margin-top: 10vh;
+            margin-top: 6vh;
             margin-left: -2vw;
             background-color: #040420;
         }
@@ -1460,17 +1478,17 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
             gap: 20px;
         }
         .playlistelem{
-            height: 65.5vh;
+            height: 63.5vh;
             /* border: 1px solid white; */
             width: 85vw;
-            margin-top: 10vh;
+            margin-top: 8vh;
             margin-left: -2vw;
         }
         .aboutuselem{
-            height: 65.5vh;
+            height: 67.5vh;
             /* border: 1px solid white; */
             width: 85vw;
-            margin-top: 10vh;
+            margin-top: 6vh;
             margin-left: -2vw;
         }
 
@@ -1539,7 +1557,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
         font-size: 6vw;
        }
        .playingtime{
-        margin-top: -1vh;
+        margin-top: 2vh;
        }
       
 
@@ -1553,20 +1571,22 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
 
 @media(max-width:375px){
    .header{
-    height: 90vh;
+    height: 97vh;
    }
    .navelements ul li {
     /* border: 1px solid white; */
     font-size: 2.9vw;
     color: #00ad82;
    }
+   
    .habibsong{
-    font-size: 15px;
+    font-size: 13px;
     /* border: 1px solid white; */
     height: 29vh;
     background-color: #000000;
     border-radius: 20px;
     box-shadow: 1px 1px 4px blue;
+    margin-top: 8vh;
    }
    .trending{
     /* border: 1px solid white; */
@@ -1583,6 +1603,7 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
     margin-top: 25vh;
     border-radius: 10px;
     box-shadow: 1px qpx 5px blue;
+    height: 15vh;
    }
    .info-on-img{
     /* border: 1px solid white; */
@@ -1595,11 +1616,10 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    }
    .musicelements{
     /* border: 1px solid white; */
-    font-size: 28px;
+    font-size: 24px;
    }
    .masterplay{
     border: 2px solid rgb(0, 0, 0);
-    width: 30vw;
    }
    .songsonebyone11{
     /* border: 1px solid white; */
@@ -1617,8 +1637,12 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    }
 
    .songslielem{
-    /* border: 1px solid white; */
-    height: 60vh;
+    /* border: 1px solid rgb(223, 0, 0); */
+    height: 66vh;
+    margin-top: 7vh;
+   }
+   .songslielem::-webkit-scrollbar{
+    height: 2px;
    }
    .indexinallsong11{
     font-size: 2vh;
@@ -1635,17 +1659,17 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    }
 
    .allplaylistname{
-    font-size: 10px;
+    font-size: 7px;
     background-color: #000000;
     color: #00ff40;
     /* box-shadow: 1px 1px 4px rgb(0, 41, 129); */
    }
    .topcontainer{
     /* border: 1px solid white; */
-    font-size: 7px;
+    font-size: 5px;
     width: 30vw;
     background-color: #130058;
-    height: 5vh;
+    height: 6vh;
     color: #00b818;
     font-weight: 400;
    }
@@ -1655,9 +1679,9 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
 
    .songsclass{
     /* border: 1px solid white; */
-    height: 6vh;
+    height: 8vh;
     width: 60vw;
-    background-color: #000546;
+    background-color: #000072;
    }
    .songsclass .playbandname{
     font-size: 13px;
@@ -1666,9 +1690,15 @@ box-shadow: 1px 1px 10px rgb(0, 0, 163); }
    .pinabout{
     font-size: 14px;
    }
-  .popularsongs .popsonsec{
-    margin-top: 10px;
+   .playingtime{
+    margin-top: -1vh;
    }
+   .rangetime::-webkit-slider-thumb{
+    width: 15px;
+    height: 15px;
+   }
+
+   
 
 
 
