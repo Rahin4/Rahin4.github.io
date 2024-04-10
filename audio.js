@@ -127,7 +127,7 @@ const audiobundle = [
     src: "musics/O Mahi O Mahi(PagalWorld.com.cm).mp3",
     state: false,
     img: "img/O-Maahi-From-Dunki-Hindi-2023-20231211171007-150x150.jpg",
-    Id: 14,
+    Id: 15,
   },
   {
     songname: "o mon pakhi",
@@ -135,7 +135,7 @@ const audiobundle = [
     src: "musics/O Mon Pakhi _ Mon Je Kore Uru Uru _ Koel _ Hiraan _ Shreya Ghoshal _ Rana Majumd.m4a",
     state: false,
     img: "img/Mon-Je-Kore-Uru-Uru-Bengali-2020-20201203174912-500x500.jpg",
-    Id: 14,
+    Id: 16,
   },
   {
     songname: "ore nil doriya",
@@ -143,7 +143,7 @@ const audiobundle = [
     src: "musics/Ore Nil Doriya│Sareng Bou│Farooque│Kabori Sarwar│Bangla Old Movie Song.m4a",
     state: false,
     img: "img/hqdefault.jpg",
-    Id: 14,
+    Id: 17,
   },
   {
     songname: "pap jomai",
@@ -151,7 +151,7 @@ const audiobundle = [
     src: "musics/Paap Jomai Chirkut Song Aynabaji, Aynabaji Movie Song , Chonchol (1).m4a",
     state: false,
     img: "img/artworks-000187882182-kyqs04-t500x500.jpg",
-    Id: 14,
+    Id: 18,
   },
   {
     songname: "chadni jaisa rang",
@@ -159,7 +159,7 @@ const audiobundle = [
     src: "musics/Pankaj Udhas - Chandi Jaisa Rang.m4a",
     state: false,
     img: "img/The-Very-Best-Of-Pankaj-Udhas-Live-Vol-3-Hindi-1991-20190924060931-500x500.jpg",
-    Id: 14,
+    Id: 19,
   },
   {
     songname: "learning to fly",
@@ -167,7 +167,7 @@ const audiobundle = [
     src: "musics/Pink Floyd - Learning To Fly (Official Music Video HD).m4a",
     state: false,
     img: "img/sddefault.jpg",
-    Id: 14,
+    Id: 20,
   },
   {
     songname: "sajde",
@@ -175,7 +175,7 @@ const audiobundle = [
     src: "musics/sajde (slowed & reverb).m4a",
     state: false,
     img: "img/images (2).jpg",
-    Id: 14,
+    Id: 21,
   },
   {
     songname: "fields of gold",
@@ -183,7 +183,7 @@ const audiobundle = [
     src: "musics/Sting - Fields Of Gold.mp3",
     state: false,
     img: "img/Fields-of-gold-sting.jpg",
-    Id: 14,
+    Id: 22,
   },
   {
     songname: "tera ban jaunga",
@@ -191,7 +191,7 @@ const audiobundle = [
     src: "musics/tera ban jaunga (slowed & reverb).m4a",
     state: false,
     img: "img/artworks-000575101799-retbj9-t500x500.jpg",
-    Id: 14,
+    Id: 23,
   },
   {
     songname: "meomoy reboot",
@@ -199,7 +199,7 @@ const audiobundle = [
     src: "musics/VØJ, Narvent - Memory Reboot (4K Music Video).m4a",
     state: false,
     img: "img/artworks-8zY79hHzgzoNqx9O-qPGziw-t500x500.jpg",
-    Id: 14,
+    Id: 24,
   },
   {
     songname: "yellow",
@@ -207,7 +207,7 @@ const audiobundle = [
     src: "musics/yellow.mp3",
     state: false,
     img: "img/Yellow_cover_art.jpg",
-    Id: 14,
+    Id: 25,
   },
   {
     songname: "80's morning show",
@@ -215,7 +215,7 @@ const audiobundle = [
     src: "musics/মনে পড়ে ৮০ দশকের বিটিভির সেই সুর। 80's morning show music of Bangladesh Televisi.m4a",
     state: false,
     img: "img/unnamed.png",
-    Id: 14,
+    Id: 26,
   },
   
 ];
@@ -445,7 +445,7 @@ function movevol(vol) {
 
 const btnplay = document.querySelector(".btnhabib");
 btnplay.addEventListener("click", function () {
-  Musicx.src = audiobundle[7].src;
+  Musicx.src = audiobundle[5].src;
   btnplay.innerHTML = "play";
   songdetails.innerHTML = `<div class="songdetails">
  <h2>${audiobundle[7].songname}</h2>
